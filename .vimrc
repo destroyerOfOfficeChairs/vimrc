@@ -129,6 +129,12 @@ augroup END
 " If the current file type is HTML, set indentation to 2 spaces.
 autocmd Filetype html setlocal tabstop=2 shiftwidth=2 expandtab
 
+" If the current file type is txt, set textwidth to 80.
+autocmd Filetype text setlocal textwidth=80
+
+" If the current file type is tex, set textwidth to 80.
+autocmd Filetype tex setlocal textwidth=80
+
 " If Vim version is equal to or greater than 7.3 enable undofile.
 " This allows you to undo changes to a file even after saving it.
 if version >= 703
